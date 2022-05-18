@@ -1,0 +1,130 @@
+.app__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__header-leftsection {
+  flex: 2;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__header-rightsection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__header-rightsection_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__header-rightsection_search input {
+  width: auto;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Tahoma;
+  border: 2px solid var(--gray-color);
+  padding: 0.6rem 0.3rem;
+}
+
+.app__header-rightsection_btnsearch {
+  font-size: 1rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  margin: 0 2px;
+  color: var(--white-color);
+  border: none;
+  background-color: var(--red-color);
+  transition: var(--transition);
+}
+
+.app__header-rightsection_explore {
+  margin-top: 0.65em;
+  font-size: 1.2rem;
+  color: var(--gray-color);
+}
+
+.app__header-leftsection_paragraph {
+  font-size: 3rem;
+  color: var(--black-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-family: var(--third-font);
+}
+
+.app__header-leftsection_buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__header-leftsection_btnregister,
+.app__header-leftsection_btnsign {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: var(--second-font);
+  font-weight: bolder;
+  transition: var(--transition);
+}
+
+.app__header-leftsection_btnregister {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: none;
+  margin-right: 5px;
+  padding: 0.65rem 2rem;
+}
+
+.app__header-leftsection_btnsign {
+  border: 3px solid var(--red-color);
+  color: var(--black-color);
+  padding: 0.5rem 2rem;
+}
+
+.app__header-leftsection_btnregister:hover,
+.app__header-rightsection_btnsearch:hover {
+  background-color: var(--blue-color);
+}
+
+@media screen and (max-width: 900px) {
+  .app__header {
+    flex-direction: column;
+  }
+
+  .app__header-leftsection {
+    padding: 0;
+  }
+
+  .app__header-leftsection_paragraph {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .app__header-leftsection_buttons {
+    flex-direction: column;
+  }
+  .app__header-leftsection_btnregister,
+  .app__header-leftsection_btnsign {
+    margin: 5px 0;
+  }
+  .app__header-leftsection_btnregister {
+    padding: 0.5rem 1.75rem;
+  }
+  .app__header-leftsection_btnsign {
+    padding: 0.5rem 2rem;
+  }
+}

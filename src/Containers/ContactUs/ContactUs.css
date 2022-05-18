@@ -1,0 +1,140 @@
+.app__contactus {
+  background-color: var(--main-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__contactus-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: auto;
+  background-color: var(--main-color);
+  margin: 1.4rem;
+}
+
+.app__contactus-container-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #fff;
+  flex: 2;
+  box-shadow: 5px 5px 12px 9px rgba(125, 125, 125, 0.77);
+}
+
+.app__contactus-container-form input {
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  outline: none;
+  border: 2px solid var(--red-color);
+  font-family: var(--third-font);
+  font-size: 1.3rem;
+}
+
+.app__contactus-container-form textarea {
+  resize: vertical;
+  padding: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+  border: 2px solid var(--red-color);
+  font-family: var(--third-font);
+  font-size: 1.3rem;
+}
+
+.app__contactus-container-form button {
+  font-family: var(--third-font);
+  font-size: 1.4rem;
+  padding: 0.65rem;
+  background-color: var(--red-color);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-self: center;
+  width: 150px;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 4px;
+}
+
+.app__contactus-container-form button:hover {
+  background-color: var(--gray-color);
+}
+
+.app__contactus-container-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 2rem;
+  flex: 1;
+
+  color: white;
+
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: var(--main-font);
+}
+
+.app__contactus-container-infos div {
+  padding: 1rem 0;
+  background-color: #fff;
+  color: var(--gray-color);
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: 5px 5px 12px 9px rgba(125, 125, 125, 0.77);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.app__contactus-container-infos div i {
+  font-size: 1.4rem;
+  padding: 5px 5px;
+  margin: 3px;
+  border: 2px gray dotted;
+  border-radius: 50%;
+  color: var(--red-color);
+}
+
+.app__contactus-container-infos div p {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .app__contactus-container {
+    flex-direction: column;
+    width: auto;
+    padding: 2rem 0;
+    margin: 0;
+  }
+
+  .app__contactus-container-form {
+    order: 2;
+  }
+
+  .app__contactus-container-form input,
+  .app__contactus-container-form textarea {
+    font-size: 1.1rem;
+  }
+
+  .app__contactus-container-infos {
+    order: 1;
+    flex-direction: column;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    padding: 1rem;
+    align-items: center;
+
+    justify-content: center;
+  }
+  .app__contactus-container-infos span i {
+    font-size: 1rem;
+  }
+}

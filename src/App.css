@@ -1,0 +1,18 @@
+.section__padding {
+  padding: 3rem 6rem;
+}
+
+.app__bg {
+  background-image: url("./Assets/main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
